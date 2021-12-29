@@ -1,0 +1,38 @@
+service: holiday-service
+
+frameworkVersion: '2'
+ 
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: us-east-1
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-offline
+ 
+functions:
+  getAllHoliday:
+    handler: src/handler/index.getAllHoliday
+    description: Return India Holidays List.
+    events:
+      - http: 
+          path: all
+          method: get
+
+  checkHoliday:
+    handler: src/handler/index.checkHoliday
+    description: Check if provided date is holiday or not.
+    events:
+      - http: 
+          path: check/date/{date}
+          method: get
+
+  checkStateHoliday:
+    handler: src/handler/index.checkStateHoliday
+    description: Check Statewise holiday.
+    events:
+      - http: 
+          path: check/state/{state}
+          method: get    

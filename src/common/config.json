@@ -1,0 +1,23 @@
+{
+    "data":[
+        {
+            "date":"1-Jan-2022",
+            "day":"Sat",
+            "holiday_name":"New Year's Day",
+            "applicable_state":"AR, ML, MN, MZ, NL, PY, RJ, SK, TG & TN"
+        },
+        {
+            "date":"2-Jan-2022",
+            "day":"Sun",
+            "holiday_name":"New Year Holiday",
+            "applicable_state":"MZ"
+        },
+        {
+            "date":"9-Jan-2022",
+            "day":"Sun",
+            "holiday_name":"Guru Gobind Singh Jayanti",
+            "applicable_state":"CH & HR"
+        }
+    ]
+
+}
